@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <H1>Dit zijn de backyardigans</H1>
+    <ul>
+    {% for backyardigan in backyardigans %}
+
+        <li>{{ backyardigan.name }}</li>
+        <li><img src="{{ backyardigan.img }}"></li>
+    </ul>
+    {% endfor %}
+{% endblock %}
